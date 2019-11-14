@@ -12,23 +12,30 @@
       href="https://fonts.googleapis.com/css?family=Pacifico|Oswald"
       rel="stylesheet"
     />
+    
   </head>
   <body>
-    <h1>Find The Weather </h1>
+    <h1> The JavaScript Weather Channel </h1>
  
     <div class="text-left">
             <a target="_blank" href="https://www.booked.net/weather/nairobi-222"><img src="https://w.bookcdn.com/weather/picture/1_222_1_1_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=98303"  alt="booked.net"/></a>
 
     </div>
-    <br>
-    <br>
-        <div class="text-center">
-                <form class=" form-inline ">
-              <input class="form-control  text-center" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-        
+    <br >
+    <div class="container">
+  		<div class="row">
+  			<h3 class="text-center text-primary">Enter City Name</h3>
+  			<span id="error"></span>	
+  		</div>
+
+  		<div class="row form-group form-inline" id="rowDiv">
+  			<input type="text" name="city" id='city' class="form-control" placeholder="City Name">
+  			<button id="submitWeather" class="btn btn-primary">Search City</button>
+  		</div>
+
+  		<div style="color: aliceblue;" id="show"></div>
+
+  	</div>
 
     <div class="icon sun-shower">
       <div class="cloud"></div>
@@ -92,10 +99,14 @@
         <a href="mailto:janiceink001@gmail.com">janiceink001@gmail.com</a>
         </address>
     </div>
-
+    <script type="text/javascript"
+    src= "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    </script>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+
+    
   </body>
 </html>
