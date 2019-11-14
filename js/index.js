@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('#submitWeather').click(function(){
+	$('#submitCity').click(function(){
 
 		var city = $("#city").val();
 
