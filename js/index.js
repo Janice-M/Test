@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('#submitCity').click(function(){
+	$('#submitWeather').click(function(){
 
 		var city = $("#city").val();
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
 				dataType: "jsonp",
 				success: function(data){
 					var widget = show(data);
-
+                    console.log(widget);
 					$("#show").html(widget);
 
 					$("#city").val('');
@@ -27,5 +27,5 @@ $(document).ready(function(){
 });
 
 function show(data) {
-	return "<h3 style=  ><strong>Weather</strong>: "+ data.main.temp +"</h3>"
+	return "<h3><strong>The weather today is </strong>: "+ data.main.temp + " Degrees Celcius</h3>" + "<h3> In:</h3>" + 
 }
