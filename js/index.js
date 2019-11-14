@@ -27,4 +27,4 @@ $(document).ready(function(){
 });
 
 function show(data) {
-        return "<h3><strong>The weather today is </strong>: "+ data.main.temp + " Degrees Celcius</h3>"  }
+        return "<h3><strong>The weather today is </strong>: "  + data.main.temp + " Degrees Celcius in </h3>" + "<h3><strong>"+data.name + "</strong> </h3>" }
